@@ -4,46 +4,155 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <style>
+        .container{
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+
+
+        body{
+        font-family: "Roboto Mono", serif;
+        font-optical-sizing: auto;
+
+        }
+        .skill-card{
+            border: 1px solid;
+            border-style: dotted;
+        /* width: fit-content; */
+            /* width: 17%; */
+        }
+        .skill-card-icons{
+            height: 70px;
+        }
+        .skill-card-body{
+            /* background-color: antiquewhite; */
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            padding-top: 17px;
+        }
+        .skills-container{
+            display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 10px;
+        /* padding: 10px; */
+        }
+        .about-container{
+            font-size: 22px;
+        }
+
+    </style>
 </head>
 <body>
+    <div >
+
+    
     <div>
 
     
-    <div style="padding: 15px;">
-
-    
         <header >
-            <div class="container" style="border-bottom: 2px solid; display: flex; align-items: center; justify-content: space-between;">
+            <div  style=" border-bottom: 2px solid;">
+                <div class="container" style="display: flex; align-items: center; justify-content: space-between;">
                 <h1>Karthicrajan N</h1>
                 <nav>
                     <ul style="display: flex; align-items: end; justify-content: center; gap: 20px; list-style: none; margin: 0; padding: 0;">
-                        <li><a href="#about" style="text-decoration: none; color: black;">About Me</a></li>
-                        <li><a href="#skills" style="text-decoration: none; color: black;">Skills</a></li>
-                        <li><a href="#projects" style="text-decoration: none; color: black;">Projects</a></li>
-                        <li><a href="#contact" style="text-decoration: none; color: black;">Contact</a></li>
+                        <li><a href="#about" style="text-decoration: none; color: black;">ABOUT ME</a></li>
+                        <li><a href="#skills" style="text-decoration: none; color: black;">SKILLS</a></li>
+                        <li><a href="#projects" style="text-decoration: none; color: black;">PROJECTS</a></li>
+                        <li><a href="#contact" style="text-decoration: none; color: black;">CONTACT</a></li>
                     </ul>
                 </nav>
+            </div>
             </div>
         </header>
         
 
     <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Hello! I'm Karthicrajan, a passionate Computer Science student and aspiring software developer. I have experience in full-stack development, and solving complex algorithmic problems.</p>
+        <div class="container about-container">
+            <!-- <h2>About Me</h2> -->
+            <p>Hello! I'm Karthicrajan,</p>
+            <p> A passionate Computer Science student and aspiring software developer. I have experience in full-stack development, and solving complex algorithmic problems.</p>
         </div>
     </section>
 
     <section id="skills">
         <div class="container">
             <h2>Skills</h2>
-            <ul>
+            <!-- <ul>
                 <li>Java, JavaScript, Python</li>
                 <li>Full Stack Development (MERN)</li>
                 <li>Data Structures and Algorithms</li>
                 <li>PostgreSQL, GraphQL</li>
-            </ul>
+            </ul> -->
+            <div class="skills-container">
+                <div class="skills-body">
+                    <div class="skill-card">
+                        <div class="skill-card-body">
+                            <img class="skill-card-icons" src="data-structure.png">
+                        <p>DSA</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="skills-body">
+                    <div class="skill-card">
+                        <div class="skill-card-body">
+                            <img class="skill-card-icons" src="java-logo.png">
+                        <p>Java</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="skills-body">
+                    <div class="skill-card">
+                        <div class="skill-card-body">
+                            <img class="skill-card-icons" src="java-script.png">
+                        <p>JavaScript</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="skills-body">
+                    <div class="skill-card">
+                        <div class="skill-card-body">
+                            <img class="skill-card-icons" src="nodejs.png">
+                        <p>Node.js</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="skills-body">
+                    <div class="skill-card">
+                        <div class="skill-card-body">
+                            <img class="skill-card-icons" src="mysql.png">
+                        <p>MySql</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="skills-body">
+                    <div class="skill-card">
+                        <div class="skill-card-body">
+                            <img class="skill-card-icons" src="postgresql.png">
+                        <p>PostgreSQL</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="skills-body">
+                    <div class="skill-card">
+                        <div class="skill-card-body">
+                            <img class="skill-card-icons" src="graph.png">
+                        <p>GraphQL</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -108,7 +217,7 @@
             </ul>
         </div>
     </footer>
-    <!-- <iframe src="https://sendthoughts.netlify.app/" width="600" height="400" style="border: none;"></iframe> -->
+    <!-- <iframe src="https://www.linkedin.com/in/karthicrajan-n-224702216/" width="600" height="400" style="border: none;"></iframe> -->
 </div>
 </div>
 </body>
