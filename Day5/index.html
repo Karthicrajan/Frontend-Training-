@@ -9,7 +9,7 @@
 </head>
 <body>
    
-    <div>
+    <div class="body">
         <nav class="nav-bar">
             <div class="nav-bar-container container">
                 <div class="log">
@@ -28,7 +28,7 @@
                         <li class="nav-menu"><a class="nav-menu" href="#events">Events</a></li>
                         <li class="nav-menu">Contacts Us</li>
                         <li class="nav-menu">
-                            <div class="btn-cls">
+                            <div id="memberLogin" class="btn-cls">
                                 <a class="a-btn">Member Login</a>
                             </div>
                         </li>
@@ -274,7 +274,121 @@
                     </div>
                 </div>
             </section>
-    
-    
+
+            <section class="section-6">
+                <div class="container contact-container">
+                    <div class="right-contact">
+                        <h1 class="cont-hd">Contact Tiya</h1>
+                        <form>
+                            <div class="fild-fir">
+                                <div class="input-outer form-outer">
+                                    <input class="input-fld form-input cont-input" type="text" placeholder="Full Name">
+                                </div>
+                                <div class="input-outer form-outer">
+                                    <input class="input-fld form-input cont-input" type="email" placeholder="Email address">
+                                </div>
+                                
+                            </div>
+                            <div class="textarea-outer cont-input">
+                                <textarea class="form-input form-txt-area " placeholder="Comments"> </textarea>
+                            </div>
+                            <button class="btn btn-2 btn-big">Submit</button>
+                        </form>
+                    </div>
+                    <div class="left-contact">
+                        <img class="cont-image" src="cont-1.svg">
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <div class="footer-container container">
+                    <div class="left">
+                        <div class="log">
+                            <a class="brand-log">
+                                <img src="logo.png" class="ft-logo">
+                                <span class="br-name ft-name">Tiya
+                                    <small class="br-name-sm">GOLF CLUB</small>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="join-us-container">
+                            <div class="ft-1">
+                                <p>Mon-Fri</p>
+                                <p>6:00 AM - 6:00 PM</p>
+                            </div>
+                            <div class="ft-1">
+                                <p>Sat-Sun</p>
+                                <p>6:300 AM - 8:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+    </div>
+    <div id="model-overly" class="model-overly hide"></div>
+
+        <div id="model" class="model hide">
+            <div class="model-header">
+                <h1>Member Login</h1>
+                <i id="ic-md-cl" class="fa-solid fa-xmark md-cl"></i> 
+            </div>
+            <div class="model-body">
+                <from>
+                    <div class="model-field">
+                        <label for="me-no" class="model-label">Membership No.</label>
+                        <input id="me-no" class="input-fld form-input cont-input mod-input" type="text" placeholder="Membership no.">
+                    </div>
+                    <div class="model-field">
+                        <label for="pass" class="model-label">Password</label>
+                        <input id="pass" class="input-fld form-input cont-input mod-input" type="password" placeholder="Password">
+                    </div>
+                    <div class="model-field">
+                        
+                        <input id="remember-me" class="mod-input mod-ck" type="checkbox" placeholder="Full Name">
+                        <label for="remember-me" class="model-label">Remember me</label>
+                    </div>
+                    <div class="model-field form-footer">
+                        
+                        <button type="submit" class="btn card-btn md-btn">Login</button>
+                        <a class="forgot-md-link" href="#">Forgotten password?</a>
+                    </div>
+
+                </from>
+            </div>
+            
+        </div>
+    <script>
+        var model = document.getElementById("model");
+        var modelOverly = document.getElementById("model-overly");
+        
+        var ModelClose = document.getElementById("ic-md-cl");
+
+        var memberBtn = document.getElementById("memberLogin");
+        function ModelHandlerShow(){
+            model.classList.add("showWithAni");
+            modelOverly.classList.add("show");
+        }
+        function ModelHandlerHide(){
+            model.classList.remove("showWithAni");
+            modelOverly.classList.remove("show");
+        }
+
+        memberBtn.addEventListener("click", function(){
+            ModelHandlerShow();
+        });
+
+        ModelClose.addEventListener("click", function(){
+            ModelHandlerHide();
+        });
+
+        modelOverly.addEventListener("click", function(){
+            ModelHandlerHide();
+        });
+
+
+    </script>
 </body>
 </html>
