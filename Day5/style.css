@@ -515,6 +515,12 @@ table tbody tr:nth-child(even) {
     border-bottom-left-radius: 17px;
     border-bottom-right-radius: 17px;
     color: white;
+    cursor: pointer;
+}
+
+.address-footer:hover{
+    background-color: #F2CC8F;
+    
 }
 .social-list{
     list-style: none;
@@ -533,6 +539,9 @@ table tbody tr:nth-child(even) {
     padding-bottom: 7px;
     color: white;
 }
+.social-icon:hover{
+    background-color: #81B29A;
+}
 .ft-title{
     font-size: 1.5rem;
     font-weight: 100;
@@ -548,6 +557,15 @@ table tbody tr:nth-child(even) {
 .link-color{
     text-decoration: none;
     color: #3D405B;
+}
+.model-svg{
+    position: absolute;
+    left: 0px;
+}
+.svg-footer{
+    position: absolute;
+    left: 0;
+    margin-top: -93px;
 }
 @keyframes fadeIn {
     from {
