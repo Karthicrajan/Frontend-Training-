@@ -26,7 +26,7 @@
                         <li class="nav-menu"><a class="nav-menu" href="#about">About</a></li>
                         <li class="nav-menu"><a class="nav-menu" href="#member" >Memebership</a></li>
                         <li class="nav-menu"><a class="nav-menu" href="#events">Events</a></li>
-                        <li class="nav-menu">Contacts Us</li>
+                        <li class="nav-menu"><a class="nav-menu" href="#contact">Contacts Us</a></li>
                         <li class="nav-menu">
                             <div id="memberLogin" class="btn-cls">
                                 <a class="a-btn">Member Login</a>
@@ -122,10 +122,10 @@
                             <table>
                                 <thead>
                                     <tr>
-                                        <th>Yearly Access</th>
+                                        <th class="tb-row-left">Yearly Access</th>
                                         <th>T1 $420</th>
                                         <th>T2 $640</th>
-                                        <th>T3 $860</th>
+                                        <th class="tb-row-right">T3 $860</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -181,7 +181,7 @@
                                     <input class="input-fld form-input" type="email" placeholder="Email address">
                                 </div>
                                 <div class="textarea-outer">
-                                    <textarea class="form-input form-txt-area" placeholder="Comments"> </textarea>
+                                    <textarea class="form-input form-txt-area" rows="10" cols="58" placeholder="Comments"> </textarea>
                                 </div>
                                 <button class="btn btn-2 btn-big">Submit</button>
                             </form>
@@ -275,7 +275,7 @@
                 </div>
             </section>
 
-            <section class="section-6">
+            <section class="section-6" id="contact">
                 <div class="container contact-container">
                     <div class="right-contact">
                         <h1 class="cont-hd">Contact Tiya</h1>
@@ -290,12 +290,24 @@
                                 
                             </div>
                             <div class="textarea-outer cont-input">
-                                <textarea class="form-input form-txt-area " placeholder="Comments"> </textarea>
+                                <textarea class="form-input form-txt-area " rows="10" cols="55" placeholder="Message"> </textarea>
                             </div>
                             <button class="btn btn-2 btn-big">Submit</button>
                         </form>
                     </div>
                     <div class="left-contact">
+                        <div class="address">
+                            <div class="address-body">
+                                <strong>London, United Kingdom</strong>
+                                <p>(020) 010-020-0340</p>
+                                <p>info@company.com</p>
+                            
+
+                            </div>
+                            <div class="address-footer">
+                                <h4>Directions</h4>
+                            </div>
+                        </div>
                         <img class="cont-image" src="cont-1.svg">
                     </div>
                 </div>
@@ -314,16 +326,33 @@
                         </div>
                     </div>
                     <div class="right">
+                        <h4 class="ft-title">Join Us!</h4>
                         <div class="join-us-container">
                             <div class="ft-1">
                                 <p>Mon-Fri</p>
                                 <p>6:00 AM - 6:00 PM</p>
                             </div>
+                            <hr>
                             <div class="ft-1">
                                 <p>Sat-Sun</p>
-                                <p>6:300 AM - 8:00 PM</p>
+                                <p>6:30 AM - 8:00 PM</p>
+                            </div>
+
+                            <div class="ft-1">
+                                <p>Copyright © 2048 Tiya Golf Club</p>
                             </div>
                         </div>
+                        
+                    </div>
+                    <div class="right-1">
+                        <div class="join-us-container">
+                            <ul class="social-list">
+                                <li><div class="social-icon"><i class="fa-brands fa-instagram"></i></div></li>
+                                <li><div class="social-icon"><i class="fa-brands fa-twitter"></i></div></li>
+                                <li><div class="social-icon"><i class="fa-brands fa-whatsapp"></i></div></li>
+                            </ul>
+                        </div>
+                        <p>Design: Karthicrajan</p>
                     </div>
                 </div>
             </footer>
@@ -354,6 +383,9 @@
                         
                         <button type="submit" class="btn card-btn md-btn">Login</button>
                         <a class="forgot-md-link" href="#">Forgotten password?</a>
+                        <div class="ft-bottom">
+                            <p>Any Questions ? <span><a class="link-color" href="#">010-020-0340</a></span></p>
+                        </div>
                     </div>
 
                 </from>
