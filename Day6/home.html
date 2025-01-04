@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
     <title>Document</title>
 </head>
 <body>
     <div class="body-container">
         <div class="header-section">
-            <nav class="navbar" id="nav-bar">
+            <nav class="cmnav-bar" id="nav-barId">
                 <div class="container">
                     <div class="nav-bar-container container">
                         <div class="log">
@@ -22,13 +23,13 @@
                         <div class="menu">
                             <ul class="menu-bar">
                                 <li class="menu-li menu-li-active"><a class="nav-menu" href="#home">Home</a></li>
-                                <li class="menu-li"><a class="nav-menu" href="#about">Our Shop</a></li>
-                                <li class="menu-li"><a class="nav-menu" href="#member" >Product Details</a></li>
-                                <li class="menu-li"><a class="nav-menu" href="#events">Contact Us</a></li>
+                                <li class="menu-li"><a class="nav-menu" href="ourShop.html">Our Shop</a></li>
+                                <li class="menu-li"><a class="nav-menu" href="productDetails.html" >Product Details</a></li>
+                                <li class="menu-li"><a class="nav-menu" href="contactus.html">Contact Us</a></li>
                                 <li>
-                                    <button class="btn-cls">
+                                    <div class="normal-btn">
                                         <a class="a-btn">SIGN IN</a>
-                                    </button>
+                                    </div>
                                 </li>
                             </ul>
                         </div>
@@ -125,9 +126,9 @@
                             <h1>Trending Games</h1>
                         </div>
                         <div class="sub-section-left">
-                            <button class="btn-cls">
+                            <!-- <button class="btn-cls"> -->
                                 <a class="a-btn">VIEW ALL</a>
-                            </button>
+                            <!-- </button> -->
                         </div>
                     </div>
                 </div>
@@ -137,9 +138,13 @@
                             <div class="tr-card-body">
                                 <div class="tr-img-body">
                                     <div class="price-tag tr-tag">
+                                        <span class="off-price">$65</span>
                                         <span>$55</span>
                                     </div>
-                                    <img src="asst/tr-img1.jpg">
+                                    <a href="ourShop.html">
+                                        <img src="asst/tr-img1.jpg">
+                                    </a>
+                                    
                                 </div>
                                 <div class="tr-card-body-content">
                                     <div class="tr-inner-body">
@@ -160,7 +165,34 @@
                                     <div class="price-tag tr-tag">
                                         <span>$55</span>
                                     </div>
-                                    <img src="asst/tr-img4.jpg">
+                                    <a href="ourShop.html">
+                                        <img src="asst/tr-img2.jpg">
+                                    </a>
+                                </div>
+                                <div class="tr-card-body-content">
+                                    <div class="tr-inner-body">
+                                        <div class="tr-game-name">
+                                            <p>Action</p>
+                                            <h1>Assasin Creed</h1>
+                                        </div>
+                                        <div class="buy-icon-outer">
+                                            <a><i class="fa-solid fa-bag-shopping"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tr-card">
+                            <div class="tr-card-body">
+                                <div class="tr-img-body">
+                                    <div class="price-tag tr-tag">
+                                        <span class="off-price">$65</span>
+                                        <span>$55</span>
+                                    </div>
+                                    <a href="ourShop.html">
+                                        <img src="asst/tr-img3.jpg">
+                                    </a>
                                 </div>
                                 <div class="tr-card-body-content">
                                     <div class="tr-inner-body">
@@ -182,29 +214,9 @@
                                     <div class="price-tag tr-tag">
                                         <span>$55</span>
                                     </div>
-                                    <img src="asst/tr-img2.jpg">
-                                </div>
-                                <div class="tr-card-body-content">
-                                    <div class="tr-inner-body">
-                                        <div class="tr-game-name">
-                                            <p>Action</p>
-                                            <h1>Assasin Creed</h1>
-                                        </div>
-                                        <div class="buy-icon-outer">
-                                            <a><i class="fa-solid fa-bag-shopping"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="tr-card">
-                            <div class="tr-card-body">
-                                <div class="tr-img-body">
-                                    <div class="price-tag tr-tag">
-                                        <span>$55</span>
-                                    </div>
-                                    <img src="asst/tr-img3.jpg">
+                                    <a href="ourShop.html">
+                                        <img src="asst/tr-img4.jpg">
+                                    </a>
                                 </div>
                                 <div class="tr-card-body-content">
                                     <div class="tr-inner-body">
@@ -227,7 +239,292 @@
             </div>
 
         </section>
+
+        <section class="top-game">
+            <div class="container">
+                <div class="sub-section-header">
+                    <div class="sub-section-row">
+                        <div class="sub-section-right">
+                            <p>TOP GAMES</p>
+                            <h1>Most Played</h1>
+                        </div>
+                        <div class="sub-section-left">
+                            <!-- <button class="btn-cls"> -->
+                                <a class="a-btn">VIEW ALL</a>
+                            <!-- </button> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="card-list-container">
+                    <div class="top-row">
+                        <div class="tr-card">
+                            <div class="tr-card-body top-card-body">
+                                <div class="tr-img-body">
+                                    <a href="productDetails.html">
+                                        <img src="asst/top-img1.jpg">
+                                    </a>
+                                </div>
+                                <div class="tr-card-body-content">
+                                    <div class="tr-inner-body top-game-card">
+                                        <div class="tr-game-name top-game-details">
+                                            <p>Adventure</p>
+                                            <h1>Assasin Creed</h1>
+                                        </div>
+                                        <button class="btn-cls">
+                                            <a class="a-btn">EXPLORE</a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+    
+                        <div class="tr-card">
+                            <div class="tr-card-body top-card-body">
+                                <div class="tr-img-body">
+                                    
+                                    <a href="productDetails.html">
+                                        <img src="asst/top-img2.jpg">
+                                    </a>
+                                </div>
+                                <div class="tr-card-body-content">
+                                    <div class="tr-inner-body top-game-card">
+                                        <div class="tr-game-name top-game-details">
+                                            <p>Adventure</p>
+                                            <h1>Assasin Creed</h1>
+                                        </div>
+                                        <button class="btn-cls">
+                                            <a class="a-btn">EXPLORE</a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+    
+                        <div class="tr-card">
+                            <div class="tr-card-body top-card-body">
+                                <div class="tr-img-body">
+                                   
+                                    <a href="productDetails.html">
+                                        <img src="asst/top-img3.jpg">
+                                    </a>
+                                </div>
+                                <div class="tr-card-body-content">
+                                    <div class="tr-inner-body top-game-card">
+                                        <div class="tr-game-name top-game-details">
+                                            <p>Adventure</p>
+                                            <h1>Assasin Creed</h1>
+                                        </div>
+                                        <button class="btn-cls">
+                                            <a class="a-btn">EXPLORE</a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="tr-card">
+                            <div class="tr-card-body top-card-body">
+                                <div class="tr-img-body">
+                                    
+                                    <a href="productDetails.html">
+                                        <img src="asst/top-img4.jpg">
+                                    </a>
+                                </div>
+                                <div class="tr-card-body-content">
+                                    <div class="tr-inner-body top-game-card">
+                                        <div class="tr-game-name top-game-details">
+                                            <p>Adventure</p>
+                                            <h1>Assasin Creed</h1>
+                                        </div>
+                                        <button class="btn-cls">
+                                            <a class="a-btn">EXPLORE</a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="tr-card">
+                            <div class="tr-card-body top-card-body">
+                                <div class="tr-img-body">
+                                    
+                                    <a href="productDetails.html">
+                                        <img src="asst/top-img5.jpg">
+                                    </a>
+                                </div>
+                                <div class="tr-card-body-content">
+                                    <div class="tr-inner-body top-game-card">
+                                        <div class="tr-game-name top-game-details">
+                                            <p>Adventure</p>
+                                            <h1>Assasin Creed</h1>
+                                        </div>
+                                        <button class="btn-cls">
+                                            <a class="a-btn">EXPLORE</a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="tr-card">
+                            <div class="tr-card-body top-card-body">
+                                <div class="tr-img-body">
+                                    
+                                    <a href="productDetails.html">
+                                        <img src="asst/top-img6.jpg">
+                                    </a>
+                                </div>
+                                <div class="tr-card-body-content">
+                                    <div class="tr-inner-body top-game-card">
+                                        <div class="tr-game-name top-game-details">
+                                            <p>Adventure</p>
+                                            <h1>Assasin Creed</h1>
+                                        </div>
+                                        <button class="btn-cls">
+                                            <a class="a-btn">EXPLORE</a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+              
+            </div>
+        </section>
+
+        <section class="categories">
+                <div class="container">
+                    <div class="sub-section-header">
+                        <div class="sub-section-row cat-row">
+                            <div class="sub-section-right">
+                                <p>Categories</p>
+                                <h1>Top Categories</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-list-container">
+                        <div class="top-row">
+                            
+                            <div class="tr-card">
+                                <div class="car-card">
+                                    <h4>Action</h4>
+                                    <div class="card-img-section">
+                                        <a href="#">
+                                            <img src="asst/cat-img1.jpg">
+                                        </a>
+                                    </div>
+                                  
+                                </div>  
+                            </div>
+                            <div class="tr-card">
+                                <div class="car-card">
+                                    <h4>Action</h4>
+                                    <div class="card-img-section">
+                                        <a href="#">
+                                            <img src="asst/cat-img2.jpg">
+                                        </a>
+                                    </div>
+                                  
+                                </div>  
+                            </div>
+                            <div class="tr-card">
+                                <div class="car-card">
+                                    <h4>Action</h4>
+                                    <div class="card-img-section">
+                                        <a href="#">
+                                            <img src="asst/cat-img3.jpg">
+                                        </a>
+                                    </div>
+                                  
+                                </div>  
+                            </div>
+                            <div class="tr-card">
+                                <div class="car-card">
+                                    <h4>Action</h4>
+                                    <div class="card-img-section">
+                                        <a href="#">
+                                            <img src="asst/cat-img4.jpg">
+                                        </a>
+                                    </div>
+                                  
+                                </div>  
+                            </div>
+                            <div class="tr-card">
+                                <div class="car-card">
+                                    <h4>Action</h4>
+                                    <div class="card-img-section">
+                                        <a href="#">
+                                            <img src="asst/cat-img5.jpg">
+                                        </a>
+                                    </div>
+                                  
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
         
+        <section class="adv">
+            <div class="container">
+                <div class="top-row adv-top-row">
+                    <div class="adv-left">
+                        <div class="shop-card">
+                            <div class="sub-section-header">
+                                <div class="sub-section-row adv-row">
+                                    <div class="sub-section-right">
+                                        <div class="adv-section-header">
+                                            <p>TRENDING</p>
+                                            <h1>Go Pre-Order Buy & Get Best <span class="high-li">Prices</span> For You!</h1>
+                                        </div>
+                                        
+                                        <p class="adv-card-content">Lorem ipsum dolor consectetur adipiscing, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                    <div class="sub-section-left">
+                                        <!-- <button class="bn-btn"> -->
+                                            <a class="a-btn">SHOP NOW</a>
+                                        <!-- </button> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="adv-right">
+                        <div class="adv-card">
+                            <div class="sub-section-header">
+                                <div class="sub-section-row adv-row">
+                                    <div class="sub-section-right">
+                                        <div class="adv-section-header">
+                                            <p>NEWSLETTER</p>
+                                            <h1>Get Up To $100 Off Just Buy <span class="high-li">Subscribe</span> Newsletter!</h1>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="sub-section-left nesletter-sub-left">
+                                        <div class="input-div nesletter-input">
+                                            <form>
+                                                <input type="text" placeholder="Type Something" class="bn-input">
+                                                <button class="bn-btn">SUBSCRIBE NOW</button>
+                                            </form>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-contaienr">
+                <div class="container">
+                    <div class="ft-content">
+                        <p>Copyright © 2048 LUGX Gaming Company. All rights reserved.    Design: TemplateMo</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
     
     <script src="script.js"></script>
