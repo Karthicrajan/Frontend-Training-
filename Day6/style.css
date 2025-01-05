@@ -45,6 +45,9 @@ body{
     padding-right: 20px;
     color: white;
 }
+.a-btn{
+    cursor: pointer;
+}
 .sub-section-left .a-btn{
     display: inline-block;
     background-color: #ee626b;
@@ -58,6 +61,11 @@ body{
     border-radius: 25px;
     transition: all .3
 }
+.sub-section-left .a-btn:hover{
+    background-color: #0071f8 !important;
+    color: #fff;
+}
+
 
 .normal-btn a{
     display: block;
@@ -227,9 +235,13 @@ p{
     background-color: #fff;
     text-align: center;
     width: 25%;
+    cursor: pointer;
 }
 .ser-card :hover{
-    
+    .icon-outer{
+        background-color: #ee626b;
+        color: #fff;
+    }
 }
 .ser-cord-body{
     display: flex;
@@ -303,6 +315,10 @@ p{
     .buy-icon-outer a{
         background-color: #0071f8;
     }
+    button{
+        background-color: #0071f8;
+    color: #fff;
+    }
 }
 
 .buy-icon-outer a{
@@ -367,6 +383,18 @@ p{
     gap: 36px;
     margin-top: 20px;
 }
+.new-top-game{
+    background-color: #f7f7f7;
+    border-radius: 150px;
+    margin-top: 68px;
+    padding-top: 10px;
+    padding-bottom: 45px;
+}
+.new-top-game .btn-cls{
+    position: absolute;
+    bottom: -22px;
+}
+
 .cat-row{
     justify-content: center;
     text-align: center;
@@ -452,7 +480,9 @@ p{
     top: 0;
     
 }
-
+.nesletter-input form button{
+    margin-right: -54px;
+}
 footer{
     background-image: url(asst/footer-bg.jpg);
     margin-top: 150px;

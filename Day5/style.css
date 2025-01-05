@@ -286,6 +286,16 @@ table tbody tr:nth-child(even) {
     border-radius: 10px;
     margin-bottom: 18px;
 }
+.textarea--outer{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 23px;
+    padding-right: 23px;
+    margin-left: 4px;
+    width: 91%;
+    border-radius: 22px;
+    margin-bottom: 10px;
+}
 .btn-big{
     width: 100%;
 }

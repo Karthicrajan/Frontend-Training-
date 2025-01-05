@@ -12,25 +12,29 @@ if(window.scrollY > 100){
 })
 
 
-var dectab = document.getElementById("dec-tab");
-var revtab = document.getElementById("rev-tab");
+var dectab =  document.getElementById("dec-tab");
+var revtab =  document.getElementById("rev-tab");
 
 var decContent = document.getElementById("dec-content");
 var recContent = document.getElementById("rec-content");
+console.log(decContent);
 
 dectab.addEventListener('click',() => {
     dectab.classList.add('tabActive');
     revtab.classList.remove('tabActive');
 
-    decContent.classList.remove('hide');
+    
     recContent.classList.add('hide');
+    decContent.classList.remove('hide');
 })
 
 revtab.addEventListener('click',() => {
     dectab.classList.remove('tabActive');
     revtab.classList.add('tabActive');
 
-    recContent.classList.remove('hide');
+    
     decContent.classList.add('hide');
+    recContent.classList.remove('hide');
     
 })
+
