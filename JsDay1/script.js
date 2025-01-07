@@ -20,9 +20,34 @@ revString("karthicrajan");
 checkPrime(12);
 
 
+modifyObject();
 
+function modifyObject(){
+    const user = [{
+        userName : "Karthic",
+        age : 22,
+        skills : ["java","Js","DSA","node.js"]
+    },{
+        userName : "Rajan",
+        age : 23,
+        skills : ["java","node.js"]
+    }]
 
+    console.log(user);
+    user[0].userName = user[0].userName + "rajan"
+    user[0].skills[2] = "javaScript"
 
+    user[0].skills.push(".DBMS");
+
+    console.log(user);
+
+    for(let i = 0;i<user.length;i++){
+        if(user[i].age == 23){
+            user[i].age = 45;
+        }
+    }
+    console.log(user);
+}
 
 function checkEvenOdd(num){
     let val = parseInt(num);
@@ -57,6 +82,8 @@ function NumberSum(num){
     return NumberSum(num + 1) + num;
 }
 
+
+
 function checkPrime(num){
     if (num <= 1) {
         console.log("Not Prime");
@@ -64,7 +91,7 @@ function checkPrime(num){
     }
     let count = 0;
     for(let i = 1;i<=num;i++){
-        if(num & i == 0){
+        if(num % i == 0){
             count++;
         }
     }
