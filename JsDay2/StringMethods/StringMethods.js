@@ -15,8 +15,6 @@ extractInitials("karthicrajan n");
 
 
 
-
-
 function reverseStr(str){
     let res = str.split("").reverse().join('');
     console.log(res);
@@ -54,6 +52,7 @@ function extractInitials(fullname){
     for(let i = 0; i < name.length;i++){
         initials.push(name[i][0].toUpperCase());
     }
+    
     let res = initials.join('.');
     console.log("FullName " + fullname + " ----> " + res);
 }
