@@ -1,3 +1,5 @@
+// Note : i write these command by my own
+
 let largest = findLargestWord("Just learning javaScript in training javaScript");
 console.log("The largest word is string is --> " + largest);
 
