@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: #f1f3f5;
+            font-family: "Roboto Mono", serif;
+            font-optical-sizing: auto;  
+        }
+        .error{
+            color: red;
+        }
+        .container{
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+        .table-container{
+            background-color: white;
+            width: 70%;
+            top: 10px;
+            padding-left: 10px;
+
+        }
+        table{
+            border-collapse: collapse;
+            width: 100%;
+            background-color: white;
+            margin-top: 31px;
+        }
+        .form-container{
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+            background-color: white;
+            padding: 10px;
+            
+            width: 30%;
+        }
+        .form-body{
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .field-set{
+            margin-top: 14px;
+            margin-bottom: 15px;
+        }
+        .radio-group{
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .radio-set{
+            display: flex;
+            align-items: center;
+        }
+        .check-list{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 44px;
+            margin-top: 10px;
+            column-gap: 31px;
+            row-gap: 10px;
+        }
+        .input{
+            margin-top: 10px;
+            width: 100%;
+            height: 20px;
+        }
+        .btn{
+            height: 30px;
+            background-color: #0ca678;
+            border-radius: 5px;
+            border: none;
+            color: white;
+            width: 30%;
+        }
+        .btn-pr{
+            background-color: green;
+        }
+        .btn-se{
+            background-color: red;
+        }
+        .ac-btn{
+          
+            border: navajowhite;
+            color: white;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            border-radius: 12px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        select{
+            width: 100%;
+            height: 30px !important;
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border: 1px black solid;
+        }
+
+        th {
+            background-color: #007bff;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+        }
+        .hide{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h2>Create Record</h2>
+            <!-- <center> -->       
+            <form class="form" id="form">
+                <div class="form-body">
+                    <div class="field-set ">
+                        <label for="name">Name</label><br>
+                        <input class="input" id="name" type="text"/>
+                        <span class="error hide">Please enter valid Data</span>
+                    </div>
+
+                    <div class="field-set">
+                        <label for="age">Age:</label><br>
+                        <input class="input" id="age" type="number"/>
+                        <span class="error hide">Please enter valid Data</span>
+                    </div>
+
+                    <div class="field-set">
+                        <label for="phone-no">Phone Number</label><br>
+                        <input class="input" id="phone-no" type="number"/>
+                        <span class="error hide">Please enter valid Data</span>
+                    </div>
+
+                    <div class="field-set">
+                        <label>Gender</label>
+                        <div id="gen" class="radio-group">
+                            <div class="radio-set">
+                                <label for="due-date">Male</label>
+                                <input class="" id="male" name="gender" value="male" type="radio"/>
+                            </div>
+                            <div class="radio-set">
+                                <label for="remale">FeMale</label>
+                                <input class="" id="female" name="gender" value="female" type="radio"/>
+                            </div>
+                        </div><br>
+                        <span class="error hide">Please enter valid Data</span>
+                    </div>
+                    <div class="field-set">
+                        <label for="subject">Subject</label><br>
+                        <div id="subject" class="check-list">
+                            <div class="check-set">
+                                <input type="checkbox" id="java" name="subject" value="java">
+                                <label for="java">Java</label>
+                            </div>
+                            <div class="check-set">
+                                <input type="checkbox" id="javaScript" name="subject" value="javaScript">
+                                <label for="javaScript">JavaScript</label>
+                            </div>
+                            <div class="check-set">
+                                <input type="checkbox" id="dsa" name="subject" value="DSA">
+                                <label for="dsa">DSA</label>
+                            </div>
+                            <div class="check-set">
+                                <input type="checkbox" id="dbms" name="subject" value="DBMS">
+                                <label for="dsa">DBMS</label>
+                            </div>
+                            
+                        </div>
+                        <span class="error hide">Please enter valid Data</span>
+                    </div>
+                    <div class="field-set">
+                        <label for="dob">D.O.B</label><br>
+                        <input class="input" id="dob" type="text"/>
+                        <span class="error hide">Please enter valid Data</span>
+                    </div>
+                    <div class="field-set">
+                        <label for="location">Location</label><br>
+                         <select class="input" value="" id="location" >
+                            <option value="chennai">Chennai</option>
+                            <option value="salem">Salem</option>
+                            <option value="namakkal">Namakkal</option>
+                        </select>
+                        <span class="error hide">Please enter valid Data</span>
+                    </div>
+                    <div class="field-set">
+                       <div class="create">
+                        <input  type="submit" class="input btn" id="submit" value="Create"/>
+                       </div>
+                        <div class="update hide">
+                            <input  type="submit" class="input btn" name="" id="update" value="Update"/>
+                            <input  type="button" class="input btn" name="" id="cancel" value="Cancel"/>
+                        </div>
+                        <span class="error hide">Please enter valid Data</span>
+                    </div>
+                </div>
+            </form>
+          
+        <!-- </center> -->
+        </div>
+        <div class="table-container">
+            <h2>Manage Records</h2>
+            <table id="table">
+                <thead>
+                    
+                
+                </thead>
+            <tbody id="table-body">
+                <!-- <tr>
+                  <td >karthicradjan N</td>
+                  <td>API Task</td>
+                  <td>Create API for user</td>
+                  <td>30-12-2024</td>
+                </tr>
+                <tr>
+                    <td >Arun P</td>
+                    <td>UI task</td>
+                    <td>Create page for User</td>
+                    <td>30-12-2024</td>
+                  </tr> -->
+            </tbody>
+              </table>
+        </div>
+
+       </div>
+</body>
+<script src="curd.js"></script>
+</html>
