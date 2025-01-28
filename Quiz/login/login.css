@@ -1,0 +1,23 @@
+.login-card{
+    padding: 18px;
+}
+
+.login-con{
+    margin-top: 20vh;
+}
+body{
+    background-color: #F2EFE7;
+}
+.hide{
+    display: none;
+}
+.error {
+    color: red;
+}
+.quiz-card{
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+.correct{
+    color: green;
+}

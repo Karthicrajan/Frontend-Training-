@@ -288,46 +288,39 @@ function ManageForm(){
             
             this.clearErrorMessage();
             this.formReload();
-            let names = namecr.value;
-            let ageval = age.value;
-            let mobile = phoneNumber.value;
-            let gen = selGe;
-            let su = selsub;
-            let db = dob.value;
-            let loc = location.value;
-            console.log(names);
-            console.log(!loc);
-            if(namecr.value.length <= 0 || !this.validateWithRex(names,'^[a-zA-Z \s]+$')){
+            let isValidForm = true;
+
+            if(namecr.value.length <= 0 || !this.validateWithRex(namecr.value,'^[a-zA-Z \s]+$')){
                 this.appendErrorMessage(namecr,"Pleace Enter the valid Data");
-                return false;
+                isValidForm = false;
             }
-            if(ageval <= 0 || ageval >= 101){
+            if(age.value <= 0 || age.value >= 101){
                 this.appendErrorMessage(age,"Pleace Enter valid Age");
-                return false;
+                isValidForm = false;
             }
-            if(!this.validateWithRex(mobile,'^[0-9]{10}$')){
+            if(!this.validateWithRex(phoneNumber.value,'^[0-9]{10}$')){
                 this.appendErrorMessage(phoneNumber,"Please Enter valid phone no");
-                return false;
+                isValidForm = false;
             }
-            if(!gen){
+            if(!selGe){
                 this.appendErrorMessage(genfield,"Please Select gender");
-                return false;
+                isValidForm = false;
             }
-            if(su.length <= 0){
+            if(selsub.length <= 0){
                 this.appendErrorMessage(subfield,"Please Select Subject");
-                return false;
+                isValidForm = false;
             }
-            if(!this.validateWithRex(db,'^[0-9]{2}\/[0-9]{2}\/[0-9]{4}$')){
+            if(!this.validateWithRex(dob.value,'^[0-9]{2}\/[0-9]{2}\/[0-9]{4}$')){
                 this.appendErrorMessage(dob,"Please enter Valid Date");
-                return false;
+                isValidForm = false;
             }
-            if(!loc){
+            if(!location.value){
                 this.appendErrorMessage(location,"Please Select Location");
-                return false;
+                isValidForm = false;
             }
              console.log(this.validateWithRex(namecr));
             
-            return true;
+            return isValidForm;
         },
         validateWithRex(inputData,regx){
             let regxx = new RegExp(regx);
@@ -342,7 +335,6 @@ function ManageForm(){
             console.log(element);
             let parent = element.closest('.field-set');
             let errorField = parent.children[3];
-            console.log(errorField, parent);
             errorField.classList.remove('hide');
             errorField.innerHTML = message;
             

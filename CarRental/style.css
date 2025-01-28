@@ -1,0 +1,9 @@
+.page-container{
+    margin-top: 20px;
+}
+.hide{
+    display: none;
+}
+.error{
+    color: red;
+}

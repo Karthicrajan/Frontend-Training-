@@ -1,0 +1,119 @@
+.cat-contianer{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.card-bg{
+   
+    color: white;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.fd{
+    background-color: #51cf66;
+}
+.tr{
+    background-color: #748ffc;
+}
+.sh{
+    background-color: #ffa94d;
+}
+.cat-icon{
+    font-size: xx-large;
+}
+.cat-car-icon{
+    display: flex;
+    align-items: center;
+}
+.car-con{
+    text-align: left;
+}
+.cat-list{
+    margin-top: 20px;
+}
+.card-body{
+    border-radius: 25px;
+}
+.filter-section{
+    display: flex;
+    gap: 20px;
+}
+.cr-icon{
+    font-size: 13px;
+    margin-right: 10px;
+}
+.op-header{
+    /* display: flex; */
+    justify-content: space-between;
+}
+.hd{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 40px;
+
+}
+.ex-card{
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    margin-bottom: 20px;
+}
+.ex-list-container{
+    margin-top: 20px;
+}
+.list-card-body{
+    display: flex;
+    justify-content: space-between;
+}
+.list-card-action{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.card-ac-icon{
+    font-size: 18px;
+    margin-left: 10px;
+    margin-left: 10px;
+}
+.card-delete{
+    color: red;
+}
+.action-section{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.list-cat-icon-con{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 46px;
+    font-weight: 100;
+}
+.Food{
+    color: #51cf66;
+}
+.Card-tag{
+    color: #868e96;
+}
+.Travel{
+    color: #748ffc;
+}
+.Shopping{
+    color: #ffa94d;
+}
+
+.overlay{
+    height: 100vh;
+    background-color: #868e96;
+}
+.hide{
+    display: none;
+}
+.create-form{
+    margin-top: 20px;
+}
+.back{
+    margin-top: 10px;
+}
