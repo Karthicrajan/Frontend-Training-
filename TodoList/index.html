@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="container page">
+        <div class="row">
+            <div class="col-4">
+                <div class="card" style="width: 26rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Add Task</h5>
+                      <form id="create-form">
+                        <div class="mb-3">
+                          <label for="title" class="form-label">Task Title</label>
+                          <input type="text" class="form-control" id="title" aria-describedby="emailHelp">
+                        
+                        </div>
+                        <div class="mb-3">
+                          <label for="des" class="form-label">Task Description</label>
+                          <input type="text" class="form-control" id="des">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Task Estimate Time</label>
+                            <input type="datetime-local" class="form-control" id="date">
+                          </div>
+                          <div class="" id="btn-create">
+                            <button type="submit" id="create" class="btn btn-success">Add Task</button>
+                        </div>
+                        <div class="hide" id="btn-update">
+                            <button type="submit" id="Update" class="btn btn-primary">Update</button>
+                        </div>
+                        <!-- <button type="submit" class="btn btn-primary" id="create">Add Task</button> -->
+                      </form>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-8" id="manageCarList">
+                
+                <div class="row row-cols-3">
+                    <div class="col">
+                        <div class="card-body card-bg point">
+                            <div class="row">
+                                <!-- <div class="col-2  cat-car-icon"><span class="cat-icon"><i class="fa-solid fa-car"></i></span></div> -->
+                                <div class="col-10">
+                                    <div class="car-con">
+                                        <h4>Total Points</h4>
+                                        <p id="points">1</p>
+                                    </div>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                    <div class="col">
+                      <div class="card-body card-bg tt">
+                          <div class="row">
+                              <!-- <div class="col-2  cat-car-icon"><span class="cat-icon"><i class="fa-solid fa-car"></i></span></div> -->
+                              <div class="col-10">
+                                  <div class="car-con">
+                                      <h4>Todo Task</h4>
+                                      <p id="todoTask">1</p>
+                                  </div>
+                              </div>
+                            </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="col">
+                          <div class="card-body card-bg cm">
+                              <div class="row">
+                                  <!-- <div class="col-2 cat-car-icon"><span class="cat-icon"><i class="fa-solid fa-bowl-food"></i></span></div> -->
+                                  <div class="col-10">
+                                      <div class="car-con">
+                                          <h4>Completed Task</h4>
+                                          <p id="completedTask">3</p>
+                                      </div>
+                                  </div>
+                                </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                      <div class="col">
+                          <div class="card-body card-bg pt">
+                              <div class="row">
+                                  <!-- <div class="col-2  cat-car-icon"><span class="cat-icon"><i class="fa-solid fa-cart-shopping"></i></span></div> -->
+                                  <div class="col-10">
+                                      <div class="car-con">
+                                          <h4>Pending Task</h4>
+                                          <p id="pendingTask">3</p>
+                                      </div>
+                                  </div>
+                                </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ex-body">
+                    <div class="tr-header">
+                        <!-- <div class="hd">
+                            <h3>Transactions</h3>
+                            <button type="button" class="btn btn-success" id="open-create"><span><i class="fa-solid fa-plus cr-icon"></i></span>Create</button>
+                        </div> -->
+                        <div class="op-header">
+                            <div class="filter-section" id="filter-section">
+                                <!-- <input type="text" class="form-control" id="ft-src" placeholder="Search Expense" aria-label="Recipient's username" aria-describedby="basic-addon2"> -->
+                                <select class="form-select" aria-label="Default select example" id="ft-status">
+                                    <option selected value="All">All</option>
+                                    <option value="Completed">Completed</option>
+                                    <option value="Todo">Todo</option>
+                                    <option value="Pending">Pending</option>
+                                  </select>
+                                  <!-- <select class="form-select" aria-label="Default select example" id="ft-tm">
+                                    <option selected value="All">All</option>
+                                    <option value="oneweek">One Week</option>
+                                    <option value="onemonth">One Month</option>
+                                    <option value="sixmonth">Six Month</option>
+                                    <option value="oneyear">One Year</option>
+                                  </select> -->
+                            </div>
+                            
+            
+                        </div>
+        
+                    </div>
+                    
+                    <div class="ex-list-container">
+                        <div class="ex-list" id="card-list">
+                              <!-- <div class="card ex-card">
+                                <div class="card-body">
+                                    <div class="row">
+                                       
+                                        <div class="col-sm-12">
+                                            <div class="list-card-body">
+                                                <div class="list-card-details">
+                                                    <h4>To Create UI</h4>
+                                                    <span>Create a UI to the app</span><br>
+                                                    <span>Due Date: <span>2025-12-21</span></span>
+                                                </div>
+                                                <div class="list-card-action">
+                                                    
+                                                    <div>
+                                                        <button class="btn btn-success">Start</button>
+                                                    </div>
+                                                    
+                                                    <div class="action-section">
+                                                        <a href="#" class="card-ac-icon card-edit"><i class="fa-solid fa-pen-to-square"></i></a>
+                                                        <a href="#" class="card-ac-icon card-delete"><i class="fa-solid fa-trash"></i></a>
+                                                    </div>
+                                                </div>
+
+                                                
+                                                
+                                            </div>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+        
+
+                            <div class="card ex-card card-cm">
+                                <div class="card-body">
+                                    <div class="row">
+                                        
+                                        <div class="col-sm-12">
+                                            <div class="list-card-body">
+                                                <div class="list-card-details">
+                                                    <h4>To Create UI</h4>
+                                                    <span>Create a UI to the app</span><br>
+                                                    <span>Due Date: <span>2025-12-21</span></span>
+                                                </div>
+                                                <div class="list-card-action">
+                                                    <div class="">
+                                                        <span>Stard Date</span>
+                                                        <button class="btn btn-success">Completed</button>
+                                                    </div>
+                                                    <div class="">
+                                                        <button class="btn btn-success">Start</button>
+                                                    </div>
+                                                    
+                                                    <div class="action-section">
+                                                        <a href="#" class="card-ac-icon card-edit"><i class="fa-solid fa-pen-to-square"></i></a>
+                                                        <a href="#" class="card-ac-icon card-delete"><i class="fa-solid fa-trash"></i></a>
+                                                    </div>
+                                                </div>
+
+                                                
+                                                
+                                            </div>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div> -->
+                              
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

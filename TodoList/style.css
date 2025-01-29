@@ -1,0 +1,62 @@
+.page{
+    margin-top: 20px;
+}
+.card-bg{
+    color: white;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.tt{
+    background-color: #66d9e8;
+}
+.cm{
+    background-color: #51cf66;
+}
+.pt{
+    background-color: #ffd43b;
+}
+
+.ex-list{
+    margin-top: 30px;
+}
+.list-card-body{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.list-card-action{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.card-body{
+    border-radius: 25px;
+}
+.ex-card{
+    margin-bottom: 20px;
+}
+.op-header{
+    margin-top: 50px;
+}
+.filter-section{
+    display: flex;
+    gap: 20px;
+}
+.card-cm{
+    background-color: #ebfbee;
+}
+.hide{
+    display: none;
+}
+.point{
+    background-color: #b197fc;
+}
+.row-cols-3{
+    row-gap: 20px;
+}
+.timerSection{
+    display: flex;
+    flex-direction: column;
+}
