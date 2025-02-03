@@ -1,0 +1,22 @@
+table{
+    border-collapse: collapse;
+    width: 100%;
+    background-color: white;
+    margin-top: 31px;
+}
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px black solid;
+}
+
+thead, th {
+    background-color: #495057;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+.btns{
+    margin-right: 10px;
+}

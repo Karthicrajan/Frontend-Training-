@@ -147,6 +147,7 @@ function manageUI(){
     }
 }
 let manageData = dataModul();
+
 let renderUI = manageUI();
 renderUI.renderList(manageData.getAllRecord());
 
@@ -227,7 +228,9 @@ addForm.addEventListener('submit', function(e){
     console.log(triggerBtn);
 
     if(triggerBtn.id === 'submit'){
+
         manageData.createRecord(data);
+
         renderUI.renderList(manageData.getAllRecord());
         home.classList.remove('hide');
         exCreate.classList.add('hide');
