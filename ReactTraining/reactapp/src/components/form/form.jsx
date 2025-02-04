@@ -2,7 +2,8 @@ import { useEffect, useState } from "react";
 import Input from "../input/input";
 import "./style.css"
 export default function Form({setData,formState,setFormState,email,name,setEmail,setName,updateId,data,setUpdateId}){
-
+    
+    console.log("form reloaded");
     
     const[err,setErr] = useState({emails : false,name : false}); 
 

@@ -5,10 +5,12 @@ import Table from "../../components/table/table";
 export default function CurdPage({}){
     const [data,setData] = useState([{email : "karthicrajana@gmail.com",name : "karthicrajan"},{email : "arun@gmail.com",name : "Arun"}]);
     const [formState,setFormState] = useState("create");
+
     const[email,setEmail] = useState("");
     const[name,setName] = useState("");
-    const[updateId,setUpdateId] = useState();
     
+    const[updateId,setUpdateId] = useState();
+
     useEffect(()=>{
         if(formState === 'edit'){
             setEmail(data[updateId].email);

@@ -1,0 +1,11 @@
+.cart-img{
+    height: 180px;
+    width: 100%;
+    object-fit: contain;    
+}
+.cart-con{
+    text-align: left;
+}
+.ct-card{
+    margin-bottom: 10px;
+}
