@@ -1,0 +1,15 @@
+.footer-banner{
+    /* height: 300px; */
+}
+.footer-banner-image{
+    width: 60%;
+    height: 410px;
+}
+.footer-banner-body{
+    background-color: black;
+    height: 445px;
+    width: 40%;
+    color: white;
+    height: fit-content;
+    padding: 107px;
+}

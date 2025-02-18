@@ -1,0 +1,19 @@
+.nav1-container{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 16px;
+    font-weight: 100;
+}
+.nav1-menu-list{
+    display: flex;
+    gap: 40px;
+    color: white;
+}
+.nav1-link{
+    color: white;
+}

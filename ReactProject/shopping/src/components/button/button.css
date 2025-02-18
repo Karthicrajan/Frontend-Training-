@@ -1,0 +1,70 @@
+.shopbtn{
+    background-color: var(--primary);
+    border: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: white;
+    border-radius: 30px;
+    border: var(--primary) solid 1px;
+    width: 100%;
+}
+.shopbtn:hover{
+    background-color: white;
+    color: var(--primary);
+}
+
+.shopbtn-2{
+    color: black;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: white;
+    border-radius: 30px;
+    width: 100%;
+}
+
+.shopbtn:hover{
+    background-color: transparent;
+    
+}
+
+.bannerBtn{
+    background-color: black;
+    border: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: white;
+    border-radius: 30px;
+    border: black solid 1px;
+    width: 100%;
+}
+
+.bannerBtn:hover{
+    background-color: white;
+    color: black;
+}
+
+.wightBtn{
+    background-color: white;
+    color: var(--primary);
+
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 50px;
+    padding-right: 50px;
+   
+    border-radius: 30px;
+    border: var(--primary) solid 1px;
+    width: 100%;
+    
+}
+.wightBtn:hover{
+    background-color: var(--primary);
+    color: white;
+}

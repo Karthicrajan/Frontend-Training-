@@ -1,0 +1,21 @@
+.nav-menu{
+    background-color: #e8e8e8;
+}
+.navsub-menu-link{
+    text-decoration: none;
+    color: black;
+}
+.nav-menu-container{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+.nav-menu-list{
+    display: flex;
+    gap: 30px;
+    font-weight: 100;
+}
+.navsub-menu-link:hover{
+    color: #7508ff;
+}

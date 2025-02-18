@@ -1,0 +1,18 @@
+.login-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+.sl-card-body{
+    padding-left: 45px;
+    padding-right: 45px;
+}
+.card-title{
+    text-align: center;
+
+}
+.card-footer{
+    text-align: center;
+    margin-top: 10px;
+}

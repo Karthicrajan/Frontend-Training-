@@ -1,0 +1,16 @@
+.card-news{
+    background-color: blueviolet;
+    padding: 70px;
+    color: white;
+}
+.card-header{
+    margin-bottom: 44px;
+    text-align: center;
+}
+.email-input{
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.form-container{
+    margin-left: 29%;
+}

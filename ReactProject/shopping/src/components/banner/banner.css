@@ -1,0 +1,40 @@
+.banner-container{
+    position: relative;
+}
+.banner-img{
+    width: 100%;
+    position: absolute;
+}
+.banner-body{
+    padding-top: 5%;
+    position: relative;
+    width: fit-content;
+    margin-left: 13%;
+
+}
+.banner-body h1{
+    width: 45%;
+    line-height: normal;
+    font-size: 60px;
+}
+.banner-tag{
+    background-color: #d72d2d;
+    width: fit-content;
+    font-size: 20px;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.banner-sub{
+    font-size: 20px;
+    font-weight: 100;
+}
+
+
+.shopbtn:hover{
+    background-color: white;
+    color: #751fff;
+}
+.btn-container{
+    width: 18%;
+}

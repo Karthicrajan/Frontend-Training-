@@ -1,0 +1,21 @@
+.offer-price{
+    text-decoration: line-through;
+}
+.price-section{
+    color: #751fff;
+}
+.card-text{
+    margin-bottom: 0;
+    width: 240px;
+}
+.productCard{
+    position: relative;
+}
+.salebg{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 12px;
+}
+.trans{
+    background-color: #e8e8e8;
+}

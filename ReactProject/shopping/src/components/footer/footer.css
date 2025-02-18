@@ -1,0 +1,16 @@
+.footer-list{
+    list-style: none;
+    line-height: 45px;
+    color: black;
+}
+.paymentList{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 264px;
+    padding-right: 264px;
+}
+.footer-payment{
+    text-align: center;
+    
+}

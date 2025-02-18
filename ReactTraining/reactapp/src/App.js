@@ -6,43 +6,49 @@ import Home from './ShoppingTask/pages/home/Home';
 import NavBar from './ShoppingTask/components/NavBar/NavBar';
 import ProductDetailsPage from './ShoppingTask/pages/ProductDetails/ProductDetailsPage';
 import CartPage from './ShoppingTask/pages/CartPage/CartPage';
-import { DataContext } from './ShoppingTask/Context';
-import { useEffect, useMemo, useState } from 'react';
+// import { DataContext } from './ShoppingTask/Context';
+import { createContext, useEffect, useMemo, useState } from 'react';
+
+import {  useDispatch } from "react-redux";
+import store from './redux/store';
+import { fetchProducts, storeProduct } from './redux/actions/productAction';
+
+
+export  const DataContext = createContext();
 
 function App() {
 
   const [data, setData] = useState();
+  
   const [selectedId, setSelectId] = useState();
 
-  // const [cardList,setCardList] = useState();
+  const dispatch = useDispatch();
 
   useEffect(() =>{
-      fetch('https://fakestoreapi.com/products').then(res => res.json()).then((data) =>{
+      // fetch('https://fakestoreapi.com/products').then(res => res.json()).then((data) =>{
         
-          const newRecord = data.map((item) => ({
-            ...item,isAdded : false,
-          }))
-          setData(newRecord);
-      })
+      //     const newRecord = data.map((item) => ({
+      //       ...item,isAdded : false,
+      //     }))
+
+      //     dispatch(storeProduct(newRecord));
+      //     // setData(newRecord);
+      // })
+      dispatch(fetchProducts());
   },[]);
 
-  // useEffect(() =>{
-  //     console.log(data);
-  // },[data]);
 
 
-  const providerData = useMemo(() => {
 
-    return {data,setData,selectedId,setSelectId};
+  // const providerData = {data,setData,selectedId,setSelectId};
 
-  }, [data,selectedId]);
-
-  // console.log({...props});
+ 
   return (
     <>
     
     <BrowserRouter>
-    <DataContext.Provider value={providerData}>
+    {/* <DataContext.Provider value={providerData}> */}
+    
       <NavBar/>
       <Routes>
         
@@ -52,7 +58,9 @@ function App() {
         <Route path='shopping/details' element={<ProductDetailsPage />} />
        
       </Routes>
-      </DataContext.Provider>
+      
+      {/* </DataContext.Provider> */}
+      
     </BrowserRouter>
     
     </>

@@ -4,7 +4,7 @@ export default function Card({data,click}){
     console.log(data);
     return(
         <>
-        <div class="col" key={id}>
+        <div className="col" key={id}>
               <div className="card text-center mb-3" Style={"width: 18rem"}>
                   <div className="card-body">
                     <img className="card-image" src={image}/>

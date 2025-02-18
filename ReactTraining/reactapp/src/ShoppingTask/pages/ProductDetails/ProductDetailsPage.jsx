@@ -2,21 +2,39 @@ import { useContext } from "react";
 import Button from "../../components/Button/Button";
 import "./style.css";
 import {ToastContainer, toast } from 'react-toastify';
-import { DataContext } from "../../Context";
+import { DataContext } from "../../../App";
+import { useDispatch, useSelector } from "react-redux";
+import { addtoCart } from "../../../redux/actions/productAction";
+// import { DataContext } from "../../Context";
 export default function ProductDetailsPage(){
 
-    const {data,selectedId,setData} = useContext(DataContext);
+    // const {data,selectedId,setData} = useContext(DataContext);
 
-    const currentRecord = data.find((item) => item.id == selectedId);
+    // const currentRecord = data.find((item) => item.id == selectedId);
 
-    console.log(selectedId,currentRecord);
+    // console.log(selectedId,currentRecord);
+    const dispatch = useDispatch();
+
+
+    const data = useSelector((state) => state.products.allProducts);
+    const selectedId = useSelector((state) => state.products.selectId);
+    console.log(data);
+
+     const currentRecord = data.find((item) => item.id == selectedId);
+
+
+   
     const addToCart = (e) =>{
-        setData((preData) => 
-            preData.map((item) => item.id == currentRecord.id ? {...item,isAdded : true} : item)
-        );
+        // setData((preData) => 
+        //     preData.map((item) => item.id == currentRecord.id ? {...item,isAdded : true} : item)
+        // );
+        dispatch(addtoCart(currentRecord.id));
+        
         toast.success("Product Added to Cart");
         console.log("test",e);
     }
+    
+     console.log(currentRecord);
     return(
         <>
         {/* <h1>Product details</h1> */}

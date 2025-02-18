@@ -1,0 +1,13 @@
+.scroll-productList{
+    display: flex;
+    gap: 27px;
+    
+}
+.cursor{
+    cursor: pointer;
+}
+@media only screen and (min-width: 600px) {
+    .scroll-productList{
+        overflow: auto;
+    }
+}
